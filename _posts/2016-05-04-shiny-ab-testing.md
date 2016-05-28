@@ -1,14 +1,19 @@
 ---
 layout: post
-title: Example post
+title: Shiny A/B Testing
 cover: cover.jpg
-date:   2013-12-09 12:00:00
-categories: posts
+date:   2016-05-04 12:00:00
+categories: posts r shiny
 ---
 
-## Introducing Flex, a Jekyll theme
+## A/B test your Shiny app
 
 Flex is a minimalist, responsive theme based on the website, [The Development](http://thedevelopment.co).
+
+```r
+val = c("foo")
+
+```
 
 ## Open Sourced on GitHub
 
