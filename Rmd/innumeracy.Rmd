@@ -1,0 +1,55 @@
+---
+title: "Reducing Innumeracy with Natural Frequencies"
+author: "Aaron Hoffer"
+date: "September 4, 2016"
+output: html_document
+---
+
+Gerd Gigerenzer is the Director at the Max Planck Institute for Human Development[^1]
+book "Calculated Risks"[^2] 
+paper on innumeracy[^3]
+
+Natural frequencies instead of probabilities
+
+confusion matrix created into a flow chart
+give 
+
+$$ \frac{oo}{bar}$$
+
+```{r}
+library(DiagrammeR)
+
+grViz("
+      digraph DAG {
+      
+      # Intialization of graph attributes
+      graph [overlap = true]
+      
+      # Initialization of node attributes
+      node [shape = box,
+      fontname = Helvetica,
+      color = blue,
+      type = box,
+      fixedsize = false]
+      
+      # Initialization of edge attributes
+      edge [color = green,
+      rel = yields]
+      
+      # Node statements
+      'Starting Number'; 'Have Disease'; 'Dont Have Disease';
+      
+      # Edge statements
+      'Starting Number'->'Have Disease';'Starting Number'-> 'Dont Have Disease';
+      }
+      ")
+```
+
+
+<!-- Footnotes -->
+
+[^1]:[https://www.mpib-berlin.mpg.de/en/staff/gerd-gigerenzer](https://www.mpib-berlin.mpg.de/en/staff/gerd-gigerenzer)
+
+[^2]:[http://www.goodreads.com/book/show/720043.Calculated_Risks](http://www.goodreads.com/book/show/720043.Calculated_Risks)
+
+[^3]:[http://www.ncbi.nlm.nih.gov/pmc/articles/PMC200816/](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC200816/)
